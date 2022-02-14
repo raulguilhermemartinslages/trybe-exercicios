@@ -1,9 +1,9 @@
 var resultado = 59;
 
-if (resultado >= 80); {
+if (resultado >= 80) {
     console.log("bom");
 }
-else if (reultado < 80 && resultado >= 60); {
+else if (resultado < 80 && resultado >= 60) {
     console.log("medio");
 }
 else {
