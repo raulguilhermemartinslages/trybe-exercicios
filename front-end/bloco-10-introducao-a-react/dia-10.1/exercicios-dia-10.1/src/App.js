@@ -1,14 +1,15 @@
+import { render } from '@testing-library/react';
 import './App.css';
 
 const Task = (value) => {
   return (
-    <li>3</li>
+    <li>{value}</li>
   );
 }
+
+const arr = ['passear dogs', 'lavar louça', 'faxinar casa', 'limpar quintal'];
 function App() {
-  return (
-    <Task />
-  );
+  render() {return (<ul>{ arr.map((element) => Task(element)) }</ul>);}
 }
 
 export default App;
